@@ -26,7 +26,7 @@ class Cookie {
   }
 
   void bake(int theTemp, int theCookTime ){
-    System.out.println("The cookies were baked at " + theTemp + " degrees F for " + theCookTime + " minutes.");
+    System.out.println("The cookies were baked at " + theTemp + " degrees F for " + theCookTime + " minutes");
     isReady = true;
 
 

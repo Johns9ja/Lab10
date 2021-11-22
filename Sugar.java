@@ -28,7 +28,7 @@ void cutOut(String aShape, int number ){
 void decorate(){
   super.getIsReady();
   if(isReady == true){
-    System.out.println("The cookies were decorated.");
+    System.out.println("The cookies were decorated");
     isDecorated = true;
   }
   else if(isReady == false){
