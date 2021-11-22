@@ -6,6 +6,8 @@ class Main {
     tree.cutOut(tree.getShape(), 10);
     tree.bake(350, 12);
 
+    tree.decorate();
+
     Sugar aCookie = new Sugar();
     
     aCookie.decorate();

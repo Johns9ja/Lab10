@@ -1,13 +1,13 @@
 class Sugar extends Cookie {  
-  private String shape;
-  private boolean isDecorated;
+  public String shape;
+  public boolean isDecorated;
 
-Sugar(){
+public Sugar(){
 shape = "";
 isDecorated = false;
 }
 
-Sugar(String aShape){
+public Sugar(String aShape){
   shape = aShape;
   isDecorated = false;
 }
@@ -21,16 +21,19 @@ void setShape(String aShape){
 }
 
 void cutOut(String aShape, int number ){
+  super.setNumber(number);
   System.out.println(number + " cookies were cut into " + aShape);
 }
 
 void decorate(){
-  super.getIsBaked();
-  if(isBaked = true){
+  super.getIsReady();
+  if(isReady == true){
     System.out.println("The cookies were decorated.");
+    isDecorated = true;
   }
-  else{
+  else if(isReady == false){
     System.out.println("Make sure to bake cookies first");
+    isDecorated = false;
   }
   }
 }
